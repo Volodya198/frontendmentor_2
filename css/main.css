@@ -1,0 +1,73 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root{
+  --text-color: hsl(0, 0%, 100%);
+  --back-color: hsl(47, 88%, 63%);
+  --paragraph-color: hsl(0, 0%, 63%);
+  --text_h-color: hsl(0, 0%, 7%);
+  --index: calc(1vh + 1vw);
+}
+@font-face {
+  font-family: font-g;
+  src: url(../fonts/Figtree-ExtraBold.ttf);
+  font-display: swap;
+}
+html, body{
+  background: url(../img/favicon-32x32.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  font-family: font-g;
+  font-size: 16px;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-header{
+  background-color: var(--back-color);
+  width: 84vw;
+  height: 72vh;
+  box-shadow: 0 10px 20px 2px #0000004d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-container{
+  width: calc(var(--index)*17);
+  height: calc(var(--index) * 25);
+  background-color: #fafafa;
+  border-radius: 1rem;
+  border: 2px solid var(--paragraph-color);
+  box-shadow: 7px 7px 0 0 #000;
+  
+  display: flex;
+  flex-direction: column;
+  padding: calc(var(--index));
+}
+.hero{border-radius: inherit;}
+h3{
+  color: var(--paragraph-color);
+  letter-spacing: 2px;
+}
+span{
+  display: inline-block;
+  letter-spacing: normal;
+  color: var(--text_h-color);
+  background-color: var(--back-color);
+  margin-top: 2.2vh;
+  margin-bottom: 1.6vh;
+  padding: calc(var(--index)*.3) calc(var(--index)*.4);
+  border-radius: .5rem;
+  text-align: center;
+}
+p{color: var(--paragraph-color);}
+h1{padding: calc(var(--index)*.6) 0;}
+.text-block{padding: calc(var(--index)) 0; display: flex; align-items: center;}
+.text-block img{float: left;}
+h2{padding: 0 calc(var(--index) * .8)}
